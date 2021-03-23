@@ -11,6 +11,19 @@
             }
             )
 
+            function crearArray (elemento){
+                let nombre;
+                elemento.forEach(function(ele){
+                    let obj = {
+                        'nombre': ele,
+                        'longitud': ele.length
+                    }
+                    nombre.unshift(obj)
+                })
+                return nombre;
+            }
+
+            console.log(crearArray(nombres));
         </script>
     </body>
 </html>
